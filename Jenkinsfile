@@ -9,10 +9,12 @@ pipeline {
 
   stages {
     stage('Checkout') {
-      steps {
-        git url: "${env.GIT_REPO}", branch: 'main'
-      }
-    }
+  steps {
+    // reuse the pipeline SCM (the repo that provided the Jenkinsfile)
+    checkout scm
+  }
+}
+
 
     stage('Build') {
       steps {
