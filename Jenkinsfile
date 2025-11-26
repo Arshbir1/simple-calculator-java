@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     GIT_REPO = 'https://github.com/Arshbir1/simple-calculator-java.git'
-    DOCKERHUB_REPO = 'Snowden69/simple-calculator-java'
+    DOCKERHUB_REPO = 'snowden69/simple-calculator-java'
     DOCKERHUB_CRED = 'dockerhub-creds'   // create this credential id in Jenkins
   }
 
